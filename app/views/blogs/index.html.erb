@@ -1,0 +1,9 @@
+<h1>Index</h1>
+<h2>投稿一覧</h2>
+<ul>
+  <% @blogs.each do |blog| %>
+  <li>タイトル: <%= blog.title %> || コンテンツ: <%= blog.content %></li>
+  <% end %>
+</ul>
+
+<%= link_to '新規ツイート作成', new_blog_path %>
